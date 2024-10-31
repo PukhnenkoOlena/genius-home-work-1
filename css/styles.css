@@ -108,6 +108,9 @@ ul {
   flex-grow: 1;
   gap: 40px;
 }
+.addres-icon {
+  fill: var(--color-brand-dark);
+}
 .header-menu {
   display: flex;
   gap: 64px;
@@ -156,16 +159,16 @@ ul {
 .button {
   margin-bottom: 14px;
   padding: 16px 32px;
-  color: var(--color-white);
+  color: var(--color-brand-dark);
   font-weight: 600;
-  background-color: var(--color-brand-blu);
+  background-color:transparent;
   border: 2px solid var(--color-brand-blu);
   border-radius: 32px;
   cursor: pointer;
 }
 .button:hover {
-  color: var(--color-brand-dark);
-  background-color: transparent;
+  color: var(--color-white);
+  background-color: var(--color-brand-blu);
   border: 2px solid var(--color-brand-blu);
 }
 
@@ -278,6 +281,25 @@ ul {
 .address-copyright {
   font-size: 13px;
   color: var(--color-light);
+}
+/*Carousel*/
+.carousel-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  fill: var(--color-brand-dark);
+  background-color: transparent;
+  border-radius: 50%;
+  border: 1px solid var(--color-brand-dark);
+  cursor: pointer;
+}
+
+.carousel-button:hover {
+  background-color: var(--color-brand-blu);
+  fill: var(--color-white);
 }
 /*footer*/
 .footer {
