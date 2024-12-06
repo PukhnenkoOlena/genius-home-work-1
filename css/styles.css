@@ -37,7 +37,9 @@
 
 /*Base*/
 
-* {
+*,
+::before,
+::after {
   box-sizing: border-box;
 }
 
@@ -71,6 +73,10 @@ p {
   margin-top: 0;
 }
 
+a {
+  display: inline-block;
+}
+
 address {
   font-style: normal;
 }
@@ -84,6 +90,10 @@ ul {
   max-width: 1288px;
   margin: 0 auto;
   padding: 0 24px;
+}
+
+.section {
+  padding-bottom: 94px;
 }
 
 /*link*/
@@ -178,11 +188,15 @@ ul {
   color: var(--color-light);
 }
 /*About-us-section*/
+.about-us-section {
+  padding-bottom: 176px;
+}
 .section-title {
   font-family: "Play", sans-serif;
   font-weight: 700;
   font-size: 64px;
   margin-bottom: 40px;
+  text-align: center;
 }
 .mask-photo {
   border-radius: 335px 328px 656px 837px;
@@ -242,6 +256,11 @@ ul {
   color: var(--color-dark);
 }
 /*procedures section*/
+.procedures-conteiner {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
 .procedures-list {
   display: flex;
   gap: 16px;
@@ -251,7 +270,8 @@ ul {
   flex-basis: calc((100% - 32px) / 3);
 }
 .procedures-card {
-  padding: 372px 77px 32px 115px;
+  height: 456px;
+  padding: 16px;
   border: 1px solid lightgray;
   border-radius: 16px;
 }
@@ -287,6 +307,7 @@ ul {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-shrink: 0;
   width: 44px;
   height: 44px;
   padding: 0;
@@ -301,7 +322,77 @@ ul {
   background-color: var(--color-brand-blu);
   fill: var(--color-white);
 }
+
+/*contact section*/
+.contact-conteiner {
+  display: flex;
+  gap: 32px;
+}
+.contact-form {
+  border-radius: 32px;
+  width: 423px;
+  height: 481px;
+  background-color: var(--color-brand-dark);
+}
+.contact-form-title {
+    font-weight: 600;
+    font-size: 22px;
+    text-align: center;
+    color: var(--color-white);
+}
+.contact-form-title .accent {
+  color: var(--color-brand-blu);
+}
+.contact-map {
+  flex-shrink: 0;
+  border: none;
+  border-radius: 32px;
+}
 /*footer*/
 .footer {
+  color: var(--color-brand-dark);
+  padding: 56px 0;
+}
+.footer-conteiner {
+  display: flex;
+  gap: 20px;
+}
+.footer-nav,
+.footer-address {
+  display: flex;
+  flex-basis: 50%;
+  gap: 20px;
+}
+
+.footer-logo,
+.footer-menu {
+  flex-grow: 1;
+}
+
+.address-list,
+.address-info {
+  flex-grow: 1;
+}
+
+.address-link {
+  color: var(--color-white);
+  font-size: 16px;
+  font-weight: 300;
+  text-decoration: none;
+}
+
+.address-link:hover {
+  color: var(--color-brand-blu);
+}
+
+.address-copyright {
+  color: var(--color-light);
+  font-size: 14px;
+}
+.footer {
+  /*background-image: url(../images/footer-backgtound/Vector6.png);*/
   background-color: var(--color-brand-dark);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
