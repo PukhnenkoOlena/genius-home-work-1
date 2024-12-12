@@ -67,7 +67,7 @@
           <div class="hero-container">
             <p class="hero-title-text">Косметологічна клініка</p>
             <h1 class="hero-title" lang="en">Beauty Zone</h1>
-            <button class="button" type="button">Замовити дзвінок</button>
+            <button class="button modal-btn-open" type="button">Замовити дзвінок</button>
             <p class="hero-text">
               Запишись та отримай безкоштовну консультацію нашого косметолога
             </p>
@@ -90,6 +90,21 @@
                 alt="обличчя дівчини після процедури"
               />
             </div>
+            <a href="#">
+              <svg class="icon-star2" width="32" height="32">
+                <use href="./images/icons.svg#icon-star2"></use>
+              </svg>
+            </a>
+            <a href="#">
+              <svg class="icon-star3" width="32" height="32">
+                <use href="./images/icons.svg#icon-star3"></use>
+              </svg>
+            </a>
+            <a href="#">
+              <svg class="icon-star1" width="32" height="32">
+                <use href="./images/icons.svg#icon-star1"></use>
+              </svg>
+            </a>
             <div class="about-us-text-conteiner">
               <div class="about-us-text"><h2 class="section-title">
                 Перевтілюйтесь в
@@ -114,7 +129,7 @@
       <section class="section" id="advantages-section">
         <div class="container">
           <h2 class="section-title">
-            Чому люди <span class="accent"> <br> обирають нас</span>
+            Чому люди <span class="accent"><br> обирають нас</span>
           </h2>
           <ul class="advantages-list">
             <li class="advantages-item">
@@ -264,10 +279,17 @@
               <a class="address-link" href="#" target="_blank">Політика конфіденційності</a>
               <p class="address-copyright">&copy; 2022 Дані захищені</p>
             </div>
-            
           </address>
         </div>
       </div>
     </footer>
+
+    <div class="backdrop">
+      <div class="modal">
+        <button class="modal-btn-close" tupe="button">Close</button>
+      </div>
+
+      <script src="./js/modal.js"></script>
+    </div>
   </body>
 </html>
