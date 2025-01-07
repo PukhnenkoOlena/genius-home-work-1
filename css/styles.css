@@ -41,8 +41,8 @@
 /*Base*/
 
 *,
-::before,
-::after {
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
@@ -188,7 +188,7 @@ ul {
   padding: 16px 32px;
   color: var(--color-brand-dark);
   font-weight: 600;
-  background-color:transparent;
+  background-color: transparent;
   border: 2px solid var(--color-brand-blu);
   border-radius: 32px;
   cursor: pointer;
@@ -308,6 +308,7 @@ ul {
   display: flex;
   align-items: center;
   gap: 32px;
+  justify-content: center;
 }
 
 .procedures-list {
@@ -344,7 +345,7 @@ ul {
   font-weight: 700;
 }
 
- /* видалити*/
+/* видалити*/
 
 .address-link {
   color: var(--color-white);
@@ -354,7 +355,7 @@ ul {
 
 .address-link:hover {
   color: var(--color-brand-blu);
-} 
+}
 
 /*видалити*/
 
@@ -400,10 +401,10 @@ ul {
 }
 
 .contact-form-title {
-    font-weight: 600;
-    font-size: 22px;
-    text-align: center;
-    color: var(--color-white);
+  font-weight: 600;
+  font-size: 22px;
+  text-align: center;
+  color: var(--color-white);
 }
 
 .contact-form-title .accent {
@@ -432,7 +433,7 @@ ul {
   width: 278px;
   height: 214px;
   right: 0;
-  background-image: url('../images/pexel.png');
+  background-image: url("../images/pexel.png");
 }
 
 .footer-conteiner {
