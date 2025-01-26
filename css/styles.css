@@ -36,6 +36,7 @@
   --color-light: #4a4a4a;
   --color-dark: #000;
   --color-white: #fff;
+  --color-grey: #747272;
 }
 
 /*Base*/
@@ -89,6 +90,15 @@ ul {
 
 .section {
   padding-bottom: 94px;
+}
+
+.visually-hidden {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
 }
 
 /*link*/
@@ -189,17 +199,17 @@ ul {
 .button {
   margin-bottom: 14px;
   padding: 16px 32px;
-  color: var(--color-brand-dark);
+  color: var(--color-white);
   font-weight: 600;
-  background-color: transparent;
+  background-color: var(--color-brand-blu);
   border: 2px solid var(--color-brand-blu);
   border-radius: 32px;
   cursor: pointer;
 }
 
 .button:hover {
-  color: var(--color-white);
-  background-color: var(--color-brand-blu);
+  color: var(--color-dark);
+  background-color: transparent;
   border: 2px solid var(--color-brand-blu);
 }
 
@@ -519,13 +529,72 @@ ul {
   max-width: 724px;
   height: 100%;
   max-height: 680px;
+  padding: 42px 144px;
   background-image: url(../images/background.png);
   background-color: var(--color-brand-dark);
   border-radius: 48px;
+  overflow-y: auto;
 }
 
 .modal-btn-close {
   position: absolute;
   top: 40px;
   right: 40px;
+}
+
+/*Form*/
+
+.form-field {
+  position: relative;
+  margin-bottom: 24px;
+}
+
+.form-label {
+  color: var(--color-white);
+  position: absolute;
+  top: 18px;
+  left: 32px;
+}
+.form-input {
+  padding: 18px 32px;
+  width: 100%;
+  font-size: 13px;
+  line-height: 1.17;
+  border: 2px solid var(--color-grey);
+  border-radius: 32px;
+  background-color: transparent;
+}
+
+.form-input:focus {
+  background-color: var(--color-grey);
+  outline: none;
+}
+
+.form-input::placeholder {
+  color: var(--color-white);
+  font-size: 13px;
+  line-height: 1.17;
+}
+
+.form-input:focus::placeholder {
+  color: var(--color-white);
+}
+
+.form-button {
+  display: block;
+  margin: 0 auto 24px;
+}
+
+.form-terms {
+  margin: 0 auto;
+  max-width: 210px;
+  font-size: 12px;
+  line-height: 1.5;
+  color: var(--color-grey);
+  text-align: center;
+}
+
+.form-terms-link {
+  color: var(--color-grey);
+  text-underline-offset: 2px;
 }
