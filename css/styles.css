@@ -420,13 +420,20 @@ ul {
   gap: 32px;
 }
 
-.contact-form {
+.conteiner-contact-form {
   border-radius: 32px;
-  width: 423px;
-  height: 481px;
+  width: 100%;
+  max-width: 423px;
+  height: 100%;
+  max-height: 481px;
+  margin-top: 48px;
+  margin-bottom: 32px;
   background-color: var(--color-brand-dark);
 }
 
+.contact-input {
+  max-width: 310px;
+}
 .contact-form-title {
   font-weight: 600;
   font-size: 22px;
@@ -547,6 +554,7 @@ ul {
 .form-field {
   position: relative;
   margin-bottom: 24px;
+  text-align: center;
 }
 
 .form-label {
