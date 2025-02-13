@@ -91,17 +91,21 @@
               />
             </div>
             <div class="svg-content">
-              <svg class="icon-star2" width="40" height="40">
-                <use href="./images/icons.svg#icon-star2"></use>
-              </svg>
-
-              <svg class="icon-star3" width="16" height="16">
-                <use href="./images/icons.svg#icon-star3"></use>
-              </svg>
-
-              <svg class="icon-star1" width="64" height="64">
-                <use href="./images/icons.svg#icon-star1"></use>
-              </svg>
+              <div class="svg-content-star2">
+                <svg class="icon-star2" width="40" height="40">
+                  <use href="./images/icons.svg#icon-star2"></use>
+                </svg>
+              </div>
+              <div class="svg-cotent-star3">
+                <svg class="icon-star3" width="16" height="16">
+                  <use href="./images/icons.svg#icon-star3"></use>
+                </svg>
+              </div>
+              <div class="svg-content-star1">
+                <svg class="icon-star1" width="64" height="64">
+                  <use href="./images/icons.svg#icon-star1"></use>
+                </svg>
+              </div>
             </div>
 
             <div class="about-us-text-conteiner">
@@ -363,7 +367,7 @@
       </div>
     </footer>
 
-    <div class="backdrop">
+    <div class="backdrop is-hidden">
       <div class="modal">
         <button class="modal-btn-close" type="button">Close</button>
         <h2 style="color: white">Замовити дзвінок</h2>
@@ -382,6 +386,10 @@
               name="user-name"
               id="user-name"
               placeholder="Ваше ім'я та прізвище"
+              required
+              minlength="2"
+              maxlength="20"
+              required
             />
           </div>
 
@@ -395,6 +403,8 @@
               name="user-tel"
               id="user-tel"
               placeholder="Ваш номер телефону"
+              required
+              pattern="^\+[0-9]{12}"
             />
           </div>
 
@@ -406,9 +416,9 @@
               class="form-input"
               type="email"
               name="user-email"
-              id
               id="user-email"
               placeholder="Ваша електронна пошта"
+              required
             />
           </div>
 
