@@ -1,0 +1,35 @@
+.about-us-section {
+  padding-bottom: 176px;
+
+  &__conteiner {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    gap: 32px;
+  }
+  &__mask-photo {
+    width: 328px;
+    height: 328px;
+    transform: translate(32px, 0);
+    border-radius: 335px 328px 656px 837px;
+    box-shadow: 2101px 1923px rgba(196, 196, 196, 1);
+  }
+
+  &__mask-after {
+    width: 328px;
+    height: 328px;
+    align-self: flex-end;
+    order: 1;
+    transform: translate(196px, 40px);
+  }
+
+  &__text-conteiner {
+    display: flex;
+    max-width: 650px;
+  }
+
+  &__text {
+    font-size: 22px;
+    line-height: 1.7;
+  }
+}

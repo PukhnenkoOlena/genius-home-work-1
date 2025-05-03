@@ -1,0 +1,18 @@
+.procedures-section {
+  &__conteiner {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    justify-content: center;
+  }
+
+  &__list {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    flex-basis: calc((100% - 32px) / 3);
+  }
+}

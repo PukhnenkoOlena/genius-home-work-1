@@ -1,0 +1,10 @@
+.link {
+  color: var(--color-brand-dark);
+  text-decoration: none;
+  transition: color 0.2s;
+  padding-top: 64px;
+
+  &:hover {
+    color: var(--color-brand-blu);
+  }
+}
